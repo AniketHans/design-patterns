@@ -1,0 +1,13 @@
+services:
+  postgres_db:
+    image: postgres:18
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: task_mgmt
+    volumes:
+      - postgres_data_store:/var/lib/postgresql/18/data #attaching the named volume to docker
+    ports:
+      - 5432:5432
+volumes:
+  postgres_data_store: #named volume

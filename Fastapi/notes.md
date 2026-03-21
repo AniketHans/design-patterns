@@ -7,3 +7,5 @@
 3. Fast API is built on pydantic so it provides data validation out of the box
 4. Easy to learn
 5. Fast api supports async programming means web application can handle multiple web requests simulatneously
+
+
